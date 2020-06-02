@@ -1,6 +1,7 @@
 import { h } from "preact";
 import style from "./style";
 import Slider from "../slider/slider";
+import PNR from "../../components/pnr/pnr";
 
 let crousalWideProperties = {
   images: [
@@ -33,6 +34,7 @@ const Home = () => (
   <div class={style.home}>
     {/* <h1>Home</h1>
     <p>This is the Home component.</p> */}
+    <PNR />
     <Slider path="slider" properties={crousalWideProperties} />
     <Slider path="slider" properties={crousalSquareProperties} />
   </div>

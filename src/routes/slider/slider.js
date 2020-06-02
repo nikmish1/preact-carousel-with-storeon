@@ -7,7 +7,7 @@ const Slider = (props) => {
   console.log(props);
   return (
     <div>
-      <Counter />
+      {/* <Counter /> */}
       <div class={style.sliderContainer}>
         <div class={style.sliderContainerInner + " " + style.sliderPadding}>
           {props.properties.title && (
