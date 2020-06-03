@@ -8,4 +8,11 @@ let increment = (store) => {
   store.on("inc", ({ count }) => ({ count: count + 1 }));
 };
 
-export const store = createStoreon([increment]);
+let pnr = (store) => {
+  store.on("@init", () => ({ pnrNumber: 10 }));
+  store.on("pnrSubmit", ({ pnrNumber }, pnrNo) => {
+    return { pnrNumber: pnrNo };
+  });
+};
+
+export const store = createStoreon([increment, pnr]);

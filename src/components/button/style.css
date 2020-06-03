@@ -1,0 +1,21 @@
+.button {
+  background: #ff6100;
+  border-radius: 4px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 10px 14px;
+}
+
+.invert {
+  color: #ff6100;
+  background: white;
+  border: 1px solid #ff6100;
+}
+
+.disabled {
+  color: #9b9b9b;
+  background: #efefef;
+  cursor: not-allowed;
+}

@@ -9,7 +9,7 @@ import Profile from "../routes/profile";
 import Slider from "../routes/slider/slider";
 import { StoreContext } from "storeon/preact";
 import { store } from "../store/store";
-import { Counter } from "./counter/counter";
+import Station from "./stations/stations";
 
 export default class App extends Component {
   /** Gets fired when the route changes.
@@ -53,7 +53,7 @@ export default class App extends Component {
             <Profile path="/profile/:user" />
             <Slider path="slider" properties={this.crousalWideProperties} />
             <Slider path="slider" properties={this.crousalSquareProperties} />
-            {/* <Counter path="/counter" /> */}
+            <Station path="/station" />
           </Router>
         </div>
       </StoreContext.Provider>
