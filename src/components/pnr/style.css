@@ -53,10 +53,15 @@
 }
 
 .pnrContainer {
+  width: 350px;
+  display: -ms-flexbox;
   display: flex;
-  margin-top: 76px;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-align: center;
   align-items: center;
+  margin: 76px auto;
+  position: relative;
 }
 
 .pnrInput {
